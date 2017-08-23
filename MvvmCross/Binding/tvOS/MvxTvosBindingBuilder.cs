@@ -173,7 +173,7 @@ namespace MvvmCross.Binding.tvOS
             registry.AddOrOverwrite(typeof(UILabel), MvxTvosPropertyBinding.UILabel_Text);
             registry.AddOrOverwrite(typeof(MvxCollectionViewSource), nameof(MvxCollectionViewSource.ItemsSource));
             registry.AddOrOverwrite(typeof(MvxTableViewSource), nameof(MvxTableViewSource.ItemsSource));
-            registry.AddOrOverwrite(typeof(MvxImageView), nameof(MvxImageView.ImageUrl));
+            registry.AddOrOverwrite(typeof(MvxImageView), nameof(MvxImageView.ImageUri));
             registry.AddOrOverwrite(typeof(UIImageView), nameof(UIImageView.Image));
             registry.AddOrOverwrite(typeof(UIProgressView), nameof(UIProgressView.Progress));
             registry.AddOrOverwrite(typeof(IMvxImageHelper<UIImage>), nameof(IMvxImageHelper<UIImage>.ImageUrl));

@@ -212,7 +212,7 @@ namespace MvvmCross.Binding.Droid
             registry.AddOrOverwrite(typeof(MvxFrameLayout), nameof(MvxFrameLayout.ItemsSource));
             registry.AddOrOverwrite(typeof(MvxTableLayout), nameof(MvxTableLayout.ItemsSource));
             registry.AddOrOverwrite(typeof(MvxFrameControl), nameof(MvxFrameControl.DataContext));
-            registry.AddOrOverwrite(typeof(MvxImageView), nameof(MvxImageView.ImageUrl));
+            registry.AddOrOverwrite(typeof(MvxImageView), nameof(MvxImageView.ImageUri));
             registry.AddOrOverwrite(typeof(MvxDatePicker), nameof(MvxDatePicker.Value));
             registry.AddOrOverwrite(typeof(MvxTimePicker), nameof(MvxTimePicker.Value));
             registry.AddOrOverwrite(typeof(CompoundButton), MvxAndroidPropertyBinding.CompoundButton_Checked);

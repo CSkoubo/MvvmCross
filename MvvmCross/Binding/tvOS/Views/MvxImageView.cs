@@ -19,7 +19,7 @@ namespace MvvmCross.Binding.tvOS.Views
     {
         private MvxImageViewLoader _imageHelper;
 
-        public string ImageUrl
+        public string ImageUri
         {
             get { return _imageHelper.ImageUrl; }
             set { _imageHelper.ImageUrl = value; }

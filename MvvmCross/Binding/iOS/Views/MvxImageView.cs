@@ -20,7 +20,7 @@ namespace MvvmCross.Binding.iOS.Views
         private MvxImageViewLoader _imageHelper;
         public event EventHandler ImageChanged;
 
-        public string ImageUrl
+        public string ImageUri
         {
             get => _imageHelper.ImageUrl;
             set => _imageHelper.ImageUrl = value;

@@ -71,9 +71,9 @@ namespace MvvmCross.Forms.iOS.Views.Renderers
                     _nativeControl.DefaultImagePath = SharedControl.DefaultImagePath;
                 }
 
-                if (_nativeControl.ImageUrl != SharedControl.ImageUri)
+                if (_nativeControl.ImageUri != SharedControl.ImageUri)
                 {
-                    _nativeControl.ImageUrl = SharedControl.ImageUri;
+                    _nativeControl.ImageUri = SharedControl.ImageUri;
                 }
             }
         }
@@ -109,7 +109,7 @@ namespace MvvmCross.Forms.iOS.Views.Renderers
                     }
                     else if (args.PropertyName == nameof(MvxImageView.ImageUri))
                     {
-                        _nativeControl.ImageUrl = SharedControl.ImageUri;
+                        _nativeControl.ImageUri = SharedControl.ImageUri;
                     }
                 }
             }

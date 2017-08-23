@@ -27,7 +27,7 @@ namespace MvvmCross.Binding.Droid.Views
         private IMvxImageHelper<Bitmap> _imageHelper;
         public event EventHandler ImageChanged;
 
-        public string ImageUrl
+        public string ImageUri
         {
             get => ImageHelper?.ImageUrl;
             set
@@ -147,7 +147,7 @@ namespace MvvmCross.Binding.Droid.Views
                 int attributeId = typedArray.GetIndex(i);
                 if (attributeId == MvxAndroidBindingResource.Instance.SourceBindId)
                 {
-                    ImageUrl = typedArray.GetString(attributeId);
+                    ImageUri = typedArray.GetString(attributeId);
                 }
             }
             typedArray.Recycle();
