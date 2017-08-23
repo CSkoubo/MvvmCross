@@ -8,13 +8,14 @@
 using System;
 using CoreGraphics;
 using Foundation;
+using MvvmCross.Binding.Views;
 using UIKit;
 
 namespace MvvmCross.Binding.iOS.Views
 {
     [Register("MvxImageView")]
     public class MvxImageView
-        : UIImageView
+        : UIImageView, IMvxImageView
     {
         private MvxImageViewLoader _imageHelper;
         public event EventHandler ImageChanged;

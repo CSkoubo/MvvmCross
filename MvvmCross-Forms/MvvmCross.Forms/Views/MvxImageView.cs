@@ -1,9 +1,10 @@
 ﻿using System;
+using MvvmCross.Binding.Views;
 using Xamarin.Forms;
 
 namespace MvvmCross.Forms.Views
 {
-    public class MvxImageView : Image
+    public class MvxImageView : Image, IMvxImageView
     {
         public static readonly BindableProperty ImageUriProperty = BindableProperty.Create(nameof(ImageUri), typeof(string), typeof(MvxImageView));
         public static readonly BindableProperty DefaultImagePathProperty = BindableProperty.Create(nameof(DefaultImagePath), typeof(string), typeof(MvxImageView));

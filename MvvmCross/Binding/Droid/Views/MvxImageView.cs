@@ -13,6 +13,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Widget;
 using MvvmCross.Binding.Droid.ResourceHelpers;
+using MvvmCross.Binding.Views;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Core;
 using MvvmCross.Platform.Platform;
@@ -21,7 +22,7 @@ namespace MvvmCross.Binding.Droid.Views
 {
     [Register("mvvmcross.binding.droid.views.MvxImageView")]
     public class MvxImageView
-        : ImageView
+        : ImageView, IMvxImageView
     {
         private IMvxImageHelper<Bitmap> _imageHelper;
         public event EventHandler ImageChanged;
